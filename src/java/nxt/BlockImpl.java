@@ -551,7 +551,7 @@ final class BlockImpl implements Block {
             long curBaseTarget = avgBaseTarget.longValue();
             long newBaseTarget = BigInteger.valueOf(curBaseTarget)
                     .multiply(BigInteger.valueOf(difTime))
-                    .divide(BigInteger.valueOf(240 * 4)).longValue();
+                    .divide(BigInteger.valueOf(60 * 4)).longValue();
             if (newBaseTarget < 0 || newBaseTarget > Constants.MAX_BASE_TARGET) {
                 newBaseTarget = Constants.MAX_BASE_TARGET;
             }
@@ -583,7 +583,7 @@ final class BlockImpl implements Block {
         							.divide(BigInteger.valueOf(blockCounter + 1));
         	} while(blockCounter < 24);
         	long difTime = this.timestamp - itBlock.getTimestamp();
-        	long targetTimespan = 24 * 4 * 60;
+        	long targetTimespan = 24 * 1 * 60;
         	
         	if(difTime < targetTimespan /2) {
         		difTime = targetTimespan /2;
