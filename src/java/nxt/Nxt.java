@@ -18,7 +18,7 @@ import java.util.Properties;
 
 public final class Nxt {
 
-    public static final String VERSION = "1.2.8-max-test";
+    public static final String VERSION = "1.2.9-max-test";
     public static final String APPLICATION = "NRS";
 
     private static volatile Time time = new Time.EpochTime();
@@ -191,9 +191,9 @@ public final class Nxt {
                 long startTime = System.currentTimeMillis();
                 Logger.init();
                 Db.init();
+                DbVersion.init();
                 TransactionProcessorImpl.getInstance();
                 BlockchainProcessorImpl.getInstance();
-                DbVersion.init();
                 Account.init();
                 Alias.init();
                 Asset.init();
