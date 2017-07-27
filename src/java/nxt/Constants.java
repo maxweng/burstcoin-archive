@@ -22,8 +22,8 @@ public final class Constants {
     public static final long MAX_BALANCE_NXT = 2158812800L;
     public static final long ONE_NXT = 100000000;
     public static final long MAX_BALANCE_NQT = MAX_BALANCE_NXT * ONE_NXT;
-    public static final long INITIAL_BASE_TARGET = 73300775184L;
-    public static final long MAX_BASE_TARGET = 73300775184L;
+    public static final long INITIAL_BASE_TARGET = 18325193796L;
+    public static final long MAX_BASE_TARGET = 18325193796L;
     public static final int MAX_ROLLBACK = Nxt.getIntProperty("nxt.maxRollback");
     static {
         if (MAX_ROLLBACK < 1440) {
@@ -99,11 +99,11 @@ public final class Constants {
     public static final long EPOCH_BEGINNING;
     static {
         Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone("UTC"));
-        calendar.set(Calendar.YEAR, 2017);
-        calendar.set(Calendar.MONTH, Calendar.JUNE);
-        calendar.set(Calendar.DAY_OF_MONTH, 17);
-        calendar.set(Calendar.HOUR_OF_DAY, 20);
-        calendar.set(Calendar.MINUTE, 24);
+        calendar.set(Calendar.YEAR, 2014);
+        calendar.set(Calendar.MONTH, Calendar.AUGUST);
+        calendar.set(Calendar.DAY_OF_MONTH, 11);
+        calendar.set(Calendar.HOUR_OF_DAY, 2);
+        calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
         EPOCH_BEGINNING = calendar.getTimeInMillis();
